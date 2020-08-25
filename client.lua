@@ -182,7 +182,12 @@ local rentalTick = function()
                 ShowNotification("Mail Delivery Van has been returned.")
 
                 TriggerServerEvent('MailDelivery:VanReturned')
+
+                Wait(4000)
+                return
             end
+            
+            return
         end
 
         ShowHelpText(
